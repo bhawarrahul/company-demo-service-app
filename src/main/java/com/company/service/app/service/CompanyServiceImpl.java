@@ -2,13 +2,12 @@ package com.company.service.app.service;
 
 import com.company.service.app.model.Company;
 import org.springframework.stereotype.Service;
-import org.springframework.util.StringUtils;
 
 import java.util.*;
 
 @Service
 public class CompanyServiceImpl implements CompanyService {
-    final List<Company> COMPANY_LIST = new ArrayList<>();
+    private final static List<Company> COMPANY_LIST = new ArrayList<>();
 
     @Override
     public Company getCompany(final String name) {

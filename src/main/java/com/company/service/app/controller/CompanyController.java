@@ -8,13 +8,13 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/company")
+@RequestMapping(ApiConstants.COMPANY)
 public class CompanyController {
 
     @Autowired
     CompanyService companyService;
 
-    @GetMapping("/{name}")
+    @GetMapping(ApiConstants.NAME)
     public Company getCompany(@PathVariable final String name) {
         return companyService.getCompany(name);
     }
@@ -29,7 +29,7 @@ public class CompanyController {
         return companyService.saveCompany(company);
     }
 
-    @DeleteMapping("/{name}")
+    @DeleteMapping(ApiConstants.NAME)
     public String deleteCompany(@PathVariable final String name) {
         return companyService.deleteCompany(name);
     }
