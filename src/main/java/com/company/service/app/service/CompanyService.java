@@ -11,7 +11,7 @@ public interface CompanyService {
 
     String saveCompany(final Company company);
 
-    String deleteCompany(final String name) ;
+    String deleteCompany(final String name);
 
     String updateCompany(final Company company);
 }
