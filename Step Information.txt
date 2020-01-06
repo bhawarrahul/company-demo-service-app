@@ -1,0 +1,10 @@
+#-   Assignment 2 Part 2
+
+Step 1 - Build Gradle project jar
+         sudo docker build -t buildimage -f Dockerfile .
+         sudo docker run  buildimage
+
+
+Step 2 - RUN Gradle project jar
+        sudo docker build -t deployimage -f DeployDockerfile .
+        sudo docker run  -p8888:8888 deployimage
