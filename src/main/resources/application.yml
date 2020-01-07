@@ -1,0 +1,24 @@
+# Spring Boot configuration
+spring:
+  profiles:
+    active: development
+  # Database
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/product_db
+    username: postgres
+    password: krawler
+  # JPA properties
+  jpa:
+    hibernate:
+      ddl-auto: none
+    show-sql: false
+    database: postgresql
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+    generate-ddl: false
+  liquibase:
+    enabled: true
+# Server configuration
+server:
+  port: 8080 #set your port

@@ -1,0 +1,14 @@
+
+databaseChangeLog:
+  - changeSet:
+      id: createProductAndCategoryTable
+      author: Rahul Bhawar
+      changes:
+        - sqlFile:
+            dbms: postgresql
+            encoding: utf8
+            endDelimiter: \n/\s*\n|\n/\s*$
+            path: changes/01-create-product-and-product-category-schema.sql
+            relativeToChangelogFile: true
+            splitStatements: true
+            stripComments: true
