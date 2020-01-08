@@ -1,0 +1,30 @@
+databaseChangeLog:
+  - changeSet:
+      id: create-product-category-table
+      author: Rahul Bhawar
+      changes:
+        - createTable:
+            tableName: product_category
+            columns:
+              - column:
+                  name: id
+                  type: int8
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    constraintsName: product_category_id_k
+              - column:
+                  name: name
+                  type: varchar(50)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: description
+                  type: varchar(100)
+                  constraints:
+                    nullable: true
+              - column:
+                  name: active_flg
+                  type: boolean
+                  constraints:
+                    nullable: false

@@ -1,14 +1,14 @@
-# Spring Boot configuration
+# configuration
 spring:
   profiles:
     active: development
-  # Database
+  # Postgres Database properties
   datasource:
     driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/product_db
     username: postgres
     password: krawler
-  # JPA properties
+  # JPA Related properties
   jpa:
     hibernate:
       ddl-auto: none
@@ -19,6 +19,6 @@ spring:
     generate-ddl: false
   liquibase:
     enabled: true
-# Server configuration
+# Server configuration properties
 server:
-  port: 8080 #set your port
+  port: 8080
