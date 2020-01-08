@@ -16,12 +16,12 @@ public class ProductController {
     ProductService productService;
 
     @GetMapping(ApiConstants.PATH_VARIABLE_PRODUCT_ID)
-    public Product getCompany(@PathVariable final String productId) {
+    public Product getProduct(@PathVariable final String productId) {
         return productService.getProduct(productId);
     }
 
     @GetMapping()
-    public List<Product> getAllCompany() {
+    public List<Product> getAllProduct() {
         return productService.getAllProducts();
     }
 
