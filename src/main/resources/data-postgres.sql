@@ -1,0 +1,2 @@
+INSERT INTO users (userid, name, address,contact,deleted) VALUES('U001', 'Rahul A. Bhawar', 'Pune, MH','9561030556','F');
+INSERT INTO users (userid, name, address,contact,deleted) VALUES('U002', 'John D', 'California USA','06778888','F');
